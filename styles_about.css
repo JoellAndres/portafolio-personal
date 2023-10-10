@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&family=IBM+Plex+Sans+Condensed&family=Roboto:wght@700&display=swap');
+
+
+body {
+    background-color: #2d2c55;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+
+
+.allAbout{
+    display: flex;    
+    margin: 0px auto 0px auto; /*arriba derecha abajo izquierda*/
+    max-width: 960px;
+    padding-top: 140px;  
+    /*border: medium solid green;*/
+   
+}
+
+
+/*Reglas generales tabla*/
+.tabla {
+    
+    display: grid;
+    /*border: medium solid black; */
+    /*border-collapse: collapse;*/
+    width: fit-content;
+    
+}
+
+.tabla .fila {
+    display: flex;
+    width: fit-content;
+    white-space: nowrap;
+    /*border: medium solid green;*/
+
+}
+
+.tabla .columna {
+    display: inline-block;
+    margin: 0%;
+    /*border: medium solid red;*/
+
+}
+
+/*Reglas específicas de la tabla*/
+
+#titleAbout{
+    font-size: 150%;
+    margin-top: 5%;
+}
+
+#line {
+    border-left: medium solid white;
+    height: 95%;
+    margin-left: 8%;
+
+}
+
+#textAbout {
+    font-size: 150%;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    margin-left: 13%;
+
+}
