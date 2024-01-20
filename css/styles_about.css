@@ -2,12 +2,20 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&family=IBM+Plex+Sans+Condensed&family=Roboto:wght@700&display=swap');
 
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
-    background-color: #2d2c55;
     font-family: 'Roboto', sans-serif;
     color: white;
+    
 }
 
+div{
+    box-sizing: border-box;
+}
 
 
 .allAbout{
@@ -23,24 +31,21 @@ body {
 /*Reglas generales tabla*/
 .tabla {
     
-    display: grid;
-    /*border: medium solid black; */
-    /*border-collapse: collapse;*/
-    width: fit-content;
-    
+    display: flex;
+    /* border: medium solid red; */
 }
 
 .tabla .fila {
     display: flex;
     width: fit-content;
     white-space: nowrap;
-    /*border: medium solid green;*/
-
+    /* border: medium solid green; */
+    
 }
 
 .tabla .columna {
     display: inline-block;
-    margin: 0%;
+    
     /*border: medium solid red;*/
 
 }
@@ -50,6 +55,7 @@ body {
 #titleAbout{
     font-size: 150%;
     margin-top: 5%;
+   
 }
 
 #line {
@@ -64,4 +70,33 @@ body {
     font-family: 'IBM Plex Sans Condensed', sans-serif;
     margin-left: 13%;
 
+}
+
+/*Responsive*/
+
+@media screen and (max-width: 1040px){
+
+    .tabla .fila{
+        flex-direction: column;
+        
+    }
+    
+    .tabla .fila #line{
+        visibility: hidden;
+        
+    }       
+
+    .tabla{
+        border: medium solid green;
+        margin-left: 10%;
+        margin-bottom: 20%;
+    }   
+
+
+    .columna{
+        
+       border: medium solid red;
+    }
+    
+    
 }

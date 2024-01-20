@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&family=IBM+Plex+Sans+Condensed&family=Roboto:wght@700&display=swap');
+
+
+body{
+    color: white;
+}
+/*Reglas del título*/
+.allContact h1{
+    font-family: 'Roboto', sans-serif;
+    
+    font-size: 300%;
+    margin-left: 32%;
+    margin-top: 7%;
+    width: fit-content;
+}
+
+
+/*Responsive*/
+.allContact{
+    display: flex;
+    margin: 0px auto 0px auto;
+    max-width: 960px;
+    flex-direction: column;
+    
+}
+
+/*Reglas generales tabla*/
+.tabla {
+    display: flex;
+    width: fit-content;
+    
+    
+}
+
+.tabla .fila {
+    display: flex;
+    width: fit-content;
+    white-space: nowrap;
+    
+}
+
+.tabla .fila .columna {
+    display: inline-block;
+    flex: 1;    
+    width: fit-content;
+}
+
+/*Reglas específicas de la tabla*/
+/*Card link email*/
+.tabla .fila .columna #colEmail{
+    flex-direction: column;
+    margin-left: 50%;
+}
+
+.tabla .fila .columna #colEmail p{
+    
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-size: 120%;
+    margin-left: -7%;
+    margin-top: 15%;
+}
+
+.tabla .fila .columna #colEmail p a{
+    text-decoration: none;
+    color: white;
+}
+
+
+/*Card link Linkedin*/
+.tabla .fila .columna #colLinkedin{
+    flex-direction: column;
+    margin-left: 12%;
+}
+.tabla .fila .columna #colLinkedin p a{
+
+    text-decoration: none;
+}
+
+.tabla .fila .columna #colLinkedin p{
+    
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-size: 120%;
+    margin-top: 9%;
+}
+
+.tabla .fila .columna #colLinkedin p a{
+    text-decoration: none;
+    color: white;
+}
+
+.tabla{
+    margin-top: 5%;
+    
+}
